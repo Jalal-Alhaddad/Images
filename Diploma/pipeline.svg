@@ -1,0 +1,58 @@
+<svg width="1400" height="420" xmlns="http://www.w3.org/2000/svg">
+<style>
+.box { fill:#4f8df7; rx:18; ry:18; }
+.text { font-family:Arial; font-size:20px; fill:white; text-anchor:middle; dominant-baseline:middle; }
+.label { font-family:Arial; font-size:18px; fill:#222; }
+.arrow { stroke:#16a34a; stroke-width:4; fill:none; marker-end:url(#arrow); }
+.return { stroke:#dc2626; stroke-width:4; fill:none; marker-end:url(#arrowRed); }
+</style>
+
+<defs>
+<marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+<polygon points="0 0, 10 3, 0 6" fill="#16a34a"/>
+</marker>
+
+<marker id="arrowRed" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+<polygon points="0 0, 10 3, 0 6" fill="#dc2626"/>
+</marker>
+</defs>
+
+<!-- Client -->
+<rect x="30" y="150" width="120" height="90" fill="#67e8f9" stroke="#555" stroke-width="3"/>
+<text x="90" y="270" class="label">Client App</text>
+
+<!-- Boxes -->
+<rect x="220" y="130" width="120" height="120" class="box"/>
+<text x="280" y="190" class="text">CORS</text>
+
+<rect x="390" y="130" width="120" height="120" class="box"/>
+<text x="450" y="190" class="text">JSON</text>
+
+<rect x="560" y="130" width="120" height="120" class="box"/>
+<text x="620" y="190" class="text">Auth</text>
+
+<rect x="730" y="130" width="140" height="120" class="box"/>
+<text x="800" y="190" class="text">Validation</text>
+
+<rect x="930" y="130" width="180" height="120" class="box"/>
+<text x="1020" y="175" class="text">Routing</text>
+<text x="1020" y="210" class="text">+ Handler</text>
+
+<rect x="1180" y="130" width="140" height="120" class="box"/>
+<text x="1250" y="190" class="text">Database</text>
+
+<!-- Green arrows -->
+<line x1="150" y1="190" x2="220" y2="190" class="arrow"/>
+<line x1="340" y1="190" x2="390" y2="190" class="arrow"/>
+<line x1="510" y1="190" x2="560" y2="190" class="arrow"/>
+<line x1="680" y1="190" x2="730" y2="190" class="arrow"/>
+<line x1="870" y1="190" x2="930" y2="190" class="arrow"/>
+<line x1="1110" y1="190" x2="1180" y2="190" class="arrow"/>
+
+<!-- Red return -->
+<path d="M1250 260 C1100 360, 700 360, 90 260" class="return"/>
+
+<text x="250" y="90" class="label">HTTP Request →</text>
+<text x="280" y="390" class="label">← HTTP Response</text>
+
+</svg>
